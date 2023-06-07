@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Get Started-----*/
+.background{
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.start-text{
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 25px;
+    /* right: 75%; */
+    bottom: 50%;
+    left: 32%;
+    text-align: center;
+}
+
+
+.background .Btn{
+    position: absolute;
+    background-color: red;
+    color: white;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1.625rem;
+}
+
+
+/*-----HEADER-----*/
+header {
+    padding: 20px 20px 0 20px;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "lo nav nav n2 . . . ";
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.logo {
+    grid-area: lo;
+    height: 50px;
+}
+
+.nav {
+    grid-area: nav;
+    padding: 0 30px 0 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: grey;
+}
+
+.sub-nav {
+    grid-area: n2;
+    padding: 0 40px 0 40px;
+}
+
+.sub-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+.sub-nav a:hover {
+    color: grey;
+}
+
+::selection {
+    color: white;
+    background: red;
+}
+
+/*-----shows-----*/
+
+.container{
+    padding: 50px;
+}
+
+h1{
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+    padding-top: 60px;
+}
