@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
+      integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/netflix N.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
-    integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
-    crossorigin="anonymous"></script>
-  <link rel="icon" href="img/netflix N.png">
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-
-      <div class="netflixLogo">
-        <a href="home.html">
-          <img src="img/netflix logo.png" class="logo" alt=""></a>
+  <body>
+    <div class="wrapper">
+      <div class="background">
+        <img src="img/netflix background.jpg" alt="" />
       </div>
+      <header>
+        <div class="netflixLogo">
+          <a href="home.html">
+            <img src="img/netflix logo.png" class="logo" alt=""
+          /></a>
+        </div>
 
-      <nav class="nav">
-        <a href="home.html">Home</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="shows.html">TV Shows</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="movies.html">Movies</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="originals.html">Originals</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-      </nav>
-      <nav class="sub-nav">
-        <input type="text" placeholder="Search">
-        <a href=""><i class="fas fa-search sub-nav-logo"></i></a>
-        <a href=""><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="account.html">Account</a>
-      </nav>
+        <nav class="sub-nav">
+          <a href="account.html">Account</a>
+        </nav>
+      </header>
 
-    </header>
-  </div>
-</body>
+      <div class="login">
+        <form name="form-login">
+          <h1 class="mya">Make your account</h1>
 
+          <label for="name">Email</label>
+          <input type="email" class="name" placeholder="Email" required />
+
+          <label for="pw">Password</label>
+          <input type="password" class="pw" placeholder="Password" required />
+
+          <ul class="helper-text">
+            <li class="length">Must be at least 8 characters long.</li>
+            <li class="lowercase">Must contain a lowercase letter.</li>
+            <li class="uppercase">Must contain an uppercase letter.</li>
+            <li class="special">Must contain a number or special character.</li>
+          </ul>
+          <input
+            class="register_btn"
+            type="submit"
+            value="Register"
+            onclick="account()"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
